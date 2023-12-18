@@ -70,7 +70,7 @@ wordcloud
     st.code("pip install -r requirements.txt")
     st.subheader("Download the dataset from kaggle")
     st.code("""
-            => Link:  https://www.kaggle.com/uciml/sms-spam-collection-dataset
+            => Link:  https://www.kaggle.com/datasets/purusinghvi/email-spam-classification-dataset
             """)
     st.subheader("Import Libraries")
     st.code("""
