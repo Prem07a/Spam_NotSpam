@@ -8,6 +8,9 @@ featurizer = joblib.load('./models/count_vectorizer_featurizer.pkl')
 
 # Streamlit app
 def main():
+    # Set the page title
+    st.set_page_config(page_title="Spam Not-Spam")
+
     st.title("Spam or Not Spam Classifier")
 
     # Sidebar with navigation
