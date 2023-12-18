@@ -49,7 +49,7 @@ def predict_spam_ham(text):
     prediction = model.predict(processed_data)
 
     # Convert prediction to human-readable label
-    label = "Spam" if prediction[0] == 1 else "Ham"
+    label = "Spam" if prediction[0] == 1 else "Not Spam"
 
     return label
 
