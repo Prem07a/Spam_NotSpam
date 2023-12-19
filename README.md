@@ -31,10 +31,9 @@ To use the `spam_ham.py` script for classifying emails, follow these steps:
 1. Ensure you have Python installed on your system.
 2. Install the project dependencies using the above-mentioned command.
 3. Run the script:
-
-
-python spam_ham.py
-
+```bash
+streamlit run spam_ham.py
+```
 
 ## Contributing
 
