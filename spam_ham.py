@@ -3,8 +3,7 @@ import joblib
 
 
 # Load the pre-trained model and the saved CountVectorizer
-model = joblib.load('models/spam_ham.pkl')
-featurizer = joblib.load('./models/count_vectorizer_featurizer.pkl')
+model = joblib.load('models/spamHam.pkl')
 
 # Streamlit app
 def main():
@@ -45,11 +44,8 @@ def predict_spam_ham(text):
     # Assuming your model expects a list of strings
     input_data = [text]
 
-    # Apply the saved CountVectorizer
-    processed_data = featurizer.transform(input_data)
-
     # Make predictions
-    prediction = model.predict(processed_data)
+    prediction = model.predict(input_data)
 
     # Convert prediction to human-readable label
     label = "Spam" if prediction[0] == 1 else "Not Spam"
